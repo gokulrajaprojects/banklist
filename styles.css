@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f3f3;
+    color: #444;
+}
+nav{
+    width: 100%;
+    padding: 1% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome{
+    font-size:1.2rem;
+    font-weight:500;
+}
+.logo img{
+    width: 50px;
+}
+.login{
+    display: flex;
+
+}
+.login-input{
+    border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  width: 7rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+.login-btn{
+    border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.login-input:focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+main{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:2em;
+}
+.balance h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.date{
+    font-size: 15px;
+    color:#444;
+}
+.cur-bal{
+    font-size: 2.8rem;
+}
+.content{
+    width: 60%;
+    margin-left:20%;
+    padding-top: 2em;
+    display: flex;
+}
+.movement{
+    height: 50vh;
+    width: 50%;
+    margin-left: 5%;
+    overflow: scroll;
+}
+.events{
+    margin-left: 2%;
+    width: 40%;
+    height: 50vh;
+}
+.transact{
+    width: 90%;
+    margin-left: 5%;
+    height: 16vh;
+    margin-bottom: 1vh;
+    background-color:wheat;
+    border-radius: 15px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+}
+.input{
+    display: flex;
+    gap: 15px;
+}
+.input input{
+    border: none;
+    background-color: rgba(255,255,255,0.3);
+    padding:0.4rem 0.6rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 10em;
+    transition: all 0.5s;
+}
+.label{ 
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.transact button{
+    background-color:rgb(255,255,255);
+    border: none;
+    padding: 3px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input input:focus{
+    outline: none;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.loan .label{
+    width: 35%;
+}
+.money{
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+.loan{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.close{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.footer{
+    width: 50%;
+    margin-left:25%;
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-right: 15px;
+}
+.footer p{
+    font-size: 0.8rem;
+}
+#in,#int{
+    font-size: 20px;
+    color:#39b385;
+}
+#out{
+    font-size: 20px;
+    color: #e52a5a;
+}
+.time{
+    margin-left: 30px;
+    width: 30%;
+    text-align: right;
+    align-items: center;
+}
+.footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.movements-row{
+    display: flex;
+    padding: 2.5rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+.type{
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding:0.2rem 0.5rem; 
+    border-radius: 15px;
+}
+.type--deposit{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.type--withdrawl{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.value{
+    color: #444;
+    font-size: 1.15rem;
+    font-weight: 100;
+}
+.hidden{
+    display: none;
+}

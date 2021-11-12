@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Banklist</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <p class="welcome">Log in to get started</p>
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="login">
+                <input type="text" placeholder="User" class="login-input" id="user">
+                <input type="password" placeholder="pin" class="login-input" id="pass">
+                <button class="login-btn">→</button>
+            </div>
+            
+        </nav>
+
+        <div class="hidden" id="display">
+        <main>
+            <div class="balance">
+                <h1>Current balance</h1>
+                <p class="date">As of 10/07/2023</p>
+            </div>
+            <div class="cur-bal">&#8360; <span>3840</span></div>
+        </main>
+        <div class="content">
+            <div class="movement">
+                <div class="movements-row">
+                    <div class="type type--deposit">
+                        8 deposit
+                    </div>
+                    <div class="value">
+                        &#8360; 1300
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--deposit">
+                        7 deposit 
+                    </div>
+                    <div class="value">
+                        &#8360; 70
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--withdrawl">
+                        6 withdrawl
+                    </div>
+                    <div class="value">
+                        &#8360; -130
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--withdrawl">
+                        5 withdrawl
+                    </div>
+                    <div class="value">
+                        &#8360; -650
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--deposit">
+                        4 deposit
+                    </div>
+                    <div class="value">
+                        &#8360; 3000
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--withdrawl">
+                        3 withdrawl
+                    </div>
+                    <div class="value">
+                        &#8360; -400
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--deposit">
+                        2 deposit
+                    </div>
+                    <div class="value">
+                        &#8360; 450
+                    </div>
+                </div>
+                <div class="movements-row">
+                    <div class="type type--deposit">
+                        1 deposit
+                    </div>
+                    <div class="value">
+                        &#8360; 200
+                    </div>
+                </div>
+            </div>
+            <div class="events">
+                <div class="transact money">
+                    <h2>Transfer Money</h2>
+                    <div class="input">
+                        <input type="text" id="t-to">
+                        <input type="number" id="t-amt">
+                        <button id='trs'>→</button><br>
+                    </div>
+                    <div class="label">
+                        <label for="t-to">Transfer to</label>
+                        <label for="t-amt">Amount</label>
+                    </div>
+                </div>
+                <div class="transact loan">
+                    <h2>Request Loan</h2>
+                <div class="input">
+                    <input type="number" id="r-to">
+                    <button id ="add">→</button><br>
+                </div>
+                <div class="label">
+                    <label for="r-to">Amount</label>
+                </div>
+                </div>
+                <div class="transact close">
+                    <h2>Close Account</h2>
+                    <div class="input">
+                        <input type="text" id="c-to">
+                        <input type="password" id="c-pin">
+                        <button id="close-btn">→</button><br>
+                    </div>
+                    <div class="label">
+                        <label for="c-to">Confirm User</label>
+                        <label for="c-pin">Confirm pin</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="data">
+                <p>IN <span id ='in'>&#8360; 5020</span></p>
+                <p>OUT <span id ='out'>&#8360; 1180</span></p>
+                <p>INTREST <span id ='int'>&#8360; 71</span></p>
+            </div>
+            <button>↓SORT</button>
+            <div class="time">
+                <p>You will be logged out in:5.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
